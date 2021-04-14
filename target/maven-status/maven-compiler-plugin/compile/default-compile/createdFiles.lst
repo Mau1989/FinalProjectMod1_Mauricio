@@ -1,0 +1,9 @@
+pageobjects/RegisterPage.class
+pageobjects/PricesComparatorPage.class
+Utils/DataUtils.class
+pageobjects/AddToCartPage.class
+Pojo/AddToCartItem.class
+pageobjects/BasePage.class
+pageobjects/HeaderPage.class
+Pojo/RegisterAccount.class
+Pojo/Prices.class

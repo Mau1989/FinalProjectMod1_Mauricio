@@ -1,0 +1,16 @@
+<suite name="Account related Suite">
+    <parameter name="browser" value="chrome"/>
+    <test name="Login Functionality Chrome">
+        <classes>
+            <!-- this is where you define the class that will run through terminal -->
+            <class name="AddToCart"/>
+        </classes>
+    </test>
+    <test name="Login Functionality Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <!-- this is where you define the class that will run through terminal -->
+            <class name="AddToCart"/>
+        </classes>
+    </test>
+</suite>
