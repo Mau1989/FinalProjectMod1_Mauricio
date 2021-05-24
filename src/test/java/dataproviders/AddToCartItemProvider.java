@@ -20,7 +20,6 @@ public class AddToCartItemProvider {
         JsonElement jsonData = new JsonParser().parse(new FileReader("src/test/resources/Data/item.json"));
         JsonElement dataSet = jsonData.getAsJsonObject().get("dataSet");
         List<AddToCartItem> testData = new Gson().fromJson(dataSet, new TypeToken<List<AddToCartItem>>() {}.getType());
-//        List<POJOUSER> testData = new Gson().fromJson(dataSet, new TypeToken<List<SearchData>>() {}.getType());
         Object[][] returnValue = new Object[testData.size()][1];
         int index = 0;
         for (Object[] each : returnValue) {

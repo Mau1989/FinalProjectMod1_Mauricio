@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HeaderPage extends BasePage {
 
-    //elementos
     private By myAccountLinkLocator = By.xpath("//span[@class='caret']");
     private By loginLocator = By.linkText("Login");
     private By registerLocator = By.linkText("Register");

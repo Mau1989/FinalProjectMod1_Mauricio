@@ -25,6 +25,7 @@ public class BaseClass {
     @BeforeMethod(alwaysRun = true)
     public void setupMethod(@Optional("chrome") String browser) throws MalformedURLException {
         SetInitialConfig(browser);
+        driver.manage().window().maximize();
     }
 
     @AfterMethod(alwaysRun = true)
@@ -52,20 +53,7 @@ public class BaseClass {
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driver.get("https://demo.opencart.com/index.php");
-        /*
-        DesiredCapabilities cap = DesiredCapabilities.chrome();
-        cap.setBrowserName("chrome");
-        String Node = "http://localhost:4444/wd/hub";
-        driver = new RemoteWebDriver(new URL(Node), cap);
 
-        System.out.println("**Before Method Setup");
-
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
-        driver.get("https://demo.opencart.com/index.php");
-
-         */
     }
 
     @Attachment(value = "screenshot", type = "image/png")

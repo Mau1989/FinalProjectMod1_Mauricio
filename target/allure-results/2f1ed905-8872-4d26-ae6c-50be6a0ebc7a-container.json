@@ -1,0 +1,1 @@
+{"uuid":"2f1ed905-8872-4d26-ae6c-50be6a0ebc7a","name":"Login Functionality Chrome","children":["6f94b9cc-57ad-49d8-9b41-67f08bb7df7a"],"befores":[{"name":"setupTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1621819715821,"stop":1621819718301}],"afters":[],"links":[],"start":1621819715608,"stop":1621819750647}

@@ -41,7 +41,6 @@ public class RegisterPage extends BasePage {
     }
 
     public void registerWithCredentials(String _firstname,String _lastname,String _telephone,
-                                        //String _email,
                                         String _password, String _confirmPassword){
         this.enterFistName(_firstname);
         this.enterLastName(_lastname);

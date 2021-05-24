@@ -19,7 +19,6 @@ public class RegisterProvider {
         JsonElement jsonData = new JsonParser().parse(new FileReader("src/test/resources/Data/register.json"));
         JsonElement dataSet = jsonData.getAsJsonObject().get("dataSet");
         List<RegisterAccount> testData = new Gson().fromJson(dataSet, new TypeToken<List<RegisterAccount>>() {}.getType());
-//        List<POJOUSER> testData = new Gson().fromJson(dataSet, new TypeToken<List<SearchData>>() {}.getType());
         Object[][] returnValue = new Object[testData.size()][1];
         int index = 0;
         for (Object[] each : returnValue) {
